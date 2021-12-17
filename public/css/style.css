@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, sans-serif;
+}
+body a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header {
+  text-align: center;
+  padding: 15px 0;
+  box-shadow: 0px 3px 7px rgba(100, 100, 100, 0.5);
+}
+header .title {
+  font-family: Shrikhand, cursive;
+  font-size: 35px;
+}
+
+section.local {
+  background-color: #EAEAEA;
+  padding: 15px;
+  text-align: center;
+}
+section.local i {
+  margin-right: 10px;
+}
+
+section.pres {
+  background-color: #F5F5F5;
+  padding: 30px 15px;
+  text-align: center;
+}
+section.pres .pres__title {
+  font-weight: 800;
+}
+section.pres .pres__btn {
+  border-radius: 30px;
+  color: white;
+  padding: 15px 20px;
+  text-decoration: none;
+  display: block;
+  width: fit-content;
+  margin: auto;
+  background: linear-gradient(to left, #9356DC, #FF79DA);
+}
+
+section.how {
+  padding: 15px;
+}
+section.how .how__title {
+  font-weight: 700;
+}
+section.how .how__steps {
+  padding-left: 15px;
+}
+section.how .how__step {
+  background: #F5F5F5;
+  margin-bottom: 15px;
+  padding: 25px 30px;
+  border-radius: 20px;
+  position: relative;
+  box-shadow: 3px 3px 10px rgba(100, 100, 100, 0.25);
+}
+section.how .how__step .how__number {
+  position: absolute;
+  top: 50%;
+  left: -13px;
+  transform: translateY(-50%);
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  color: #ffffff;
+  background: #9356DC;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section.how .how__step .how__icon {
+  margin-right: 15px;
+  font-size: 18px;
+}
+section.how .how__step:hover {
+  background-color: #e4d5f6;
+}
+section.how .how__step:hover .how__icon {
+  color: #9356DC;
+}
+
+section.restaurants {
+  padding: 15px;
+}
+section.restaurants .card {
+  width: 100%;
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 3px 3px 10px rgba(100, 100, 100, 0.25);
+  margin-bottom: 20px;
+}
+section.restaurants .card > a {
+  display: block;
+}
+section.restaurants .card .card__label {
+  position: absolute;
+  background: #99E2D0;
+  color: #217460;
+  padding: 5px 10px;
+  top: 10px;
+  right: 10px;
+}
+section.restaurants .card .card__title {
+  margin: 0;
+}
+section.restaurants .card .card__text div {
+  font-weight: 300;
+  margin-top: 5px;
+}
+section.restaurants .card .card__footer i.far.fa-heart {
+  font-size: 20px;
+}
+section.restaurants .card .card__img {
+  object-fit: cover;
+  width: 100%;
+  height: 210px;
+}
+section.restaurants .card .card__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,175 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  font-family: Roboto, sans-serif;
+
+  a{
+    text-decoration: none;
+    color: inherit;
+  }
+
+}
+
+header{
+
+  text-align: center;
+  padding: 15px 0;
+  box-shadow: 0px 3px 7px rgba(100,100,100,0.5);
+
+
+  .title{
+    font-family: Shrikhand, cursive;
+    font-size: 35px;
+  }
+
+}
+
+section.local{
+
+  background-color: #EAEAEA;
+  padding: 15px;
+  text-align: center;
+
+  i{
+    margin-right: 10px;
+  }
+
+
+}
+
+section.pres{
+
+  background-color: #F5F5F5;
+  padding: 30px 15px;
+  text-align: center;
+
+  .pres__title{
+    font-weight: 800;
+  }
+
+  .pres__btn{
+    border-radius: 30px;
+    color: white;
+    padding: 15px 20px;
+    text-decoration: none;
+    display: block;
+    width: fit-content;
+    margin: auto;
+    background: linear-gradient(to left, $first-color, $second-color);
+  }
+
+}
+
+section.how{
+
+  padding: 15px; // Reflechir à potentiellement mettre le meme padding sur toutes les sections
+
+  .how__title{
+    font-weight: 700;
+  }
+
+  .how__steps{
+    padding-left: 15px;
+  }
+
+  .how__step{
+    background: #F5F5F5;
+    margin-bottom: 15px;
+    padding: 25px 30px;
+    border-radius: 20px;
+    position: relative;
+    box-shadow: 3px 3px 10px rgba(100,100,100,0.25);
+
+    .how__number {
+      position: absolute;
+      top: 50%;
+      left: -13px;
+      transform: translateY(-50%);
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      color: #ffffff;
+      background: $first-color;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .how__icon {
+      margin-right: 15px;
+      font-size: 18px;
+    }
+
+    &:hover{
+
+      background-color: $first-color-light;
+
+      .how__icon {
+        color: $first-color;
+      }
+
+    }
+
+
+  }
+
+}
+
+section.restaurants{
+
+  padding: 15px;
+
+  .card {
+    width: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 3px 3px 10px rgb(100 100 100 / 25%);
+    margin-bottom: 20px;
+
+    >a{
+      display: block;
+    }
+
+    .card__label {
+      position: absolute;
+      background: $third-color;
+      color: #217460;
+      padding: 5px 10px;
+      top: 10px;
+      right: 10px;
+    }
+
+    .card__title {
+      margin: 0;
+    }
+
+    .card__text div {
+      font-weight: 300;
+      margin-top: 5px;
+    }
+
+    .card__footer i.far.fa-heart {
+      font-size: 20px;
+    }
+
+    .card__img {
+      object-fit: cover;
+      width: 100%;
+      height: 210px;
+    }
+
+    .card__footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 15px;
+    }
+
+  }
+
+
+}

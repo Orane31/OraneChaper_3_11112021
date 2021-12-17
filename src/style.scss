@@ -1,0 +1,150 @@
+$main-color : #9356DC;
+$second-color : #99E2D0;
+
+body {
+    font-family: Roboto, sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Font */
+
+.Title {
+    font-family: Shrikhand, cursive;
+}
+
+
+.container {
+    max-width: 1280px;
+    margin: auto;
+    position: relative;
+    }
+
+
+/* Colors */
+
+.BackgroundGrey {
+    background-color: lightslategrey;
+}
+
+.BackGroundWhite {
+    background-color: white;
+}
+
+.Purple {
+    color: #9356DC;
+}
+
+.Pink {
+   color: #FF79DA;
+}
+
+.Turquoise {
+    color: #99E2D0;
+}
+
+/* Components */
+
+.pres {
+    padding: 2rem;
+    text-align: center;
+    background-color: rgb(250, 250, 250);
+}
+
+.pres__title {
+    margin: 0;
+}
+
+.pres__text {
+    font-weight: 300;
+    margin: 1.5rem 0;
+}
+
+/*.pres__btn {
+    
+}*/
+
+.how {
+    padding: 1rem
+}
+
+.how__title {
+    margin-top: 0;
+}
+
+.how__steps {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    counter-reset: compteListe;
+
+    @media (min-width:64rem) {
+      display: flex;
+    }
+}
+
+.how__step {
+    padding: 1.5rem;
+    margin: 1rem 0 1rem 0.75rem;
+    box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.125);
+    border-radius: 1.25rem;
+    background-color: #f6f6f6;
+    display: flex;
+    position: relative;
+
+    @media (min-width:64rem) {
+      flex: 1;
+      margin: 0;
+      margin-left: 2rem;
+    }
+}
+
+.restaurants {
+    background-color: #f6f6f6;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    column-gap: 2rem;
+    row-gap: 2rem;
+  
+    @media (min-width:64rem) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+.card {
+    background-color: white;
+    border-radius: 1rem;
+    position: relative;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+
+  }
+
+.card__img {
+    height: 12rem;
+    width: 100%;
+    border: transparent solid 0px;
+    border-radius: 1rem 1rem 0 0;
+    box-shadow: none;
+    object-fit: cover;
+  }
+
+.card__footer {
+        padding: 1rem;
+        position: relative;
+        display: flex;
+        align-items: center;
+    
+  }
+
+.card__content {
+    flex: 1;
+}
+
+.card__title {
+margin: 0;
+margin-bottom: 0.25rem;
+}
