@@ -1,0 +1,13 @@
+{
+    "version": 3,
+    "mappings": "AEAA,AAAA,CAAC,CAAA;EACC,UAAU,EAAE,UAAU;CACvB;;AAED,AAAA,IAAI,CAAA;EACF,MAAM,EAAE,CAAC;EACT,WAAW,EAAE,kBAAkB;CAOhC;;AATD,AAIE,IAJE,CAIF,CAAC,CAAA;EACC,eAAe,EAAE,IAAI;EACrB,KAAK,EAAE,OAAO;CACf;;AFRH,IAAI,CAAJ,yBAAI;AIHJ,AAAA,IAAI,CAAA;EACA,aAAa,EAAE,IAAI;EACnB,KAAK,EAAE,KAAK;EACZ,OAAO,EAAE,SAAS;EAClB,eAAe,EAAE,IAAI;EACrB,OAAO,EAAE,KAAK;EACd,KAAK,EAAE,WAAW;EAClB,MAAM,EAAE,IAAI;EACZ,UAAU,EAAE,0CAAqD;CAClE",
+    "sources": [
+        "main.scss",
+        "base/_variables.scss",
+        "base/_main.scss",
+        "layout/_footer.scss",
+        "components/_button.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}

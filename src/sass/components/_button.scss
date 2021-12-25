@@ -1,0 +1,10 @@
+.btn{
+    border-radius: 30px;
+    color: white;
+    padding: 15px 20px;
+    text-decoration: none;
+    display: block;
+    width: fit-content;
+    margin: auto;
+    background: linear-gradient(to left, $first-color, $second-color);
+  }

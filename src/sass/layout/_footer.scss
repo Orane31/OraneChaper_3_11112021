@@ -1,0 +1,25 @@
+footer {
+  padding: 12px;
+    color: white;
+    background-color: #354146;
+  
+    .footer__title{
+      font-family: Shrikhand, cursive;
+      font-size: 25px;
+      margin: 13px auto;
+    }
+  
+    nav {
+      display: flex;
+      flex-flow: column;
+      
+    }
+
+    a {
+      margin-bottom: 10px;
+    }
+
+    .fas {
+      margin-right: 10px;
+    }
+  }

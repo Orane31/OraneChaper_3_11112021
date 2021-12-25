@@ -1,0 +1,33 @@
+header {
+  padding: 0.6rem;
+  box-shadow: 0 0 0.5rem rgb(0 0 0 / 25%);
+  position: relative;
+  z-index: 1000;
+
+  &.main-header {
+    padding: 15px 0;
+  }
+
+  &.restaurant-header {
+    display: inline-flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .title {
+    font-family: Shrikhand, cursive;
+    font-size: 35px;
+    text-align: center;
+    font-weight: 300;
+    margin: 0;
+  }
+
+  i{
+
+    color: #000;
+    left: 2em;
+    position: absolute;
+    top: 1.5em;
+  }
+}
