@@ -74,9 +74,12 @@ section.local{
   
       }
   
+      
     }
   
   }
+
+ 
   
   section.restaurants{
   
@@ -134,5 +137,40 @@ section.local{
   
   }
   
+  @media screen and (max-width: 890px){
+    .cards{
+      display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+  }
+
+  @media screen and (min-width: 580px) {
+    // .container {
+    //   justify-content: center;
+    // }
+    .how__title {
+      margin-bottom: 30px;
+    }
   
+    .how__step {
+      max-width: 400px;
+      margin: auto;
+    }
   
+    h2 {
+      margin: auto;
+      text-align: center;
+    }
+    
+    .cards{
+      display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .card {
+      margin: 15px;
+    }
+}

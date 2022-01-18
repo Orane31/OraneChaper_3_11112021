@@ -1,8 +1,10 @@
 // buttons, h3 desserts plats etc, cards
+@import "./utils/variables";
 @import "./base/variables.scss";
 @import "./base/global";
 @import "./pages/index";
 @import "./pages/restaurant";
+@import "./components/menu-item";
 
 @import "./layout/header";
 @import "./layout/footer";
