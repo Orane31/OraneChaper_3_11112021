@@ -4,7 +4,7 @@
 
 body {
   margin: 0;
-  font-family: "Roboto";
+  font-family: Roboto, sans-serif;
 }
 body a {
   text-decoration: none;
@@ -198,8 +198,8 @@ img {
   opacity: 1;
 }
 
-menu-items {
-  padding: 4%;
+.menu-content {
+  padding: 20px 20px;
 }
 
 .category {
@@ -219,18 +219,30 @@ menu-items {
 }
 
 .menu-item {
-  margin: 0 15px 15px 0;
-  background: white;
-  height: 70px;
-  width: 100%;
+  margin: 10px 0;
   border-radius: 15px;
-  box-shadow: 2px 2px 7px #d3d3d3;
+  background: #ffffff;
+  padding: 12px;
+  box-shadow: 3px 3px 10px rgba(100, 100, 100, 0.25);
   position: relative;
+  overflow: hidden;
 }
 .menu-item__title {
-  margin: 15px 0px 5px 15px;
+  margin: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
   font-weight: bold;
-  font-size: 1rem;
+}
+.menu-item__description {
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+}
+.menu-item__price {
+  text-align: right;
+  font-weight: 600;
 }
 
 header {
