@@ -4,17 +4,17 @@ header {
   position: relative;
   z-index: 1000;
 
-  &.main-header {
+  .main-header {
     padding: 15px 0;
   }
 
-  &.restaurant-header {
+  .restaurant-header {
     display: inline-flex;
     align-items: center;
     width: 100%;
     justify-content: center;
   }
-  
+
   .title {
     font-family: Shrikhand, cursive;
     font-size: 35px;
@@ -23,11 +23,19 @@ header {
     margin: 0;
   }
 
-  i{
-
-    color: #000;
-    left: 2em;
+  span {
     position: absolute;
-    top: 1.5em;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+  }
+
+  i {
+    color: #000;
+    // left: 2em;
+    // position: absolute;
+    // top: 1.5em;
+    // transform: translateY(-50%);
   }
 }

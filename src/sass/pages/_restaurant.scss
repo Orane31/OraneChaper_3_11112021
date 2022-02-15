@@ -18,37 +18,11 @@ img {
     flex-direction: column;
     &__title {
         text-align: center;
-        font-family: $font-secondaire;
+        font-family: $font-secondary;
+        font-weight: 500;
         font-size: 1.75rem;
         margin: 0;
         padding-top: 20px;
-    }
-    .hoverheart:hover {
-        .fas.fa-heart {
-            opacity: 1;
-            transition: 0.3s ease-in-out;
-        }
-        .far.fa-heart {
-            opacity: 0;
-            transition: 0.3s ease-in-out;
-        }
-    }
-    .fas.fa-heart {
-        font-size: 1.5rem;
-        position: absolute;
-        right: 25px;
-        top: 30px;
-
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        opacity: 0;
-    }
-    .far.fa-heart {
-        font-size: 1.5rem;
-        position: absolute;
-        right: 25px;
-        top: 30px;
-        opacity: 1;
     }
 }
 
@@ -73,3 +47,11 @@ img {
     }
 }
 
+@keyframes itemAppear {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}

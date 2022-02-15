@@ -55,7 +55,7 @@ section.how .how__step .how__number {
   height: 25px;
   border-radius: 50%;
   color: #ffffff;
-  background: #9356DC;
+  background: #9356dc;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -68,7 +68,7 @@ section.how .how__step:hover {
   background-color: #e4d5f6;
 }
 section.how .how__step:hover .how__icon {
-  color: #9356DC;
+  color: #9356dc;
 }
 
 section.restaurants {
@@ -87,7 +87,7 @@ section.restaurants .card > a {
 }
 section.restaurants .card .card__label {
   position: absolute;
-  background: #99E2D0;
+  background: #99e2d0;
   color: #217460;
   padding: 5px 10px;
   top: 10px;
@@ -169,33 +169,10 @@ img {
 .menu-header__title {
   text-align: center;
   font-family: "Shrikhand";
+  font-weight: 500;
   font-size: 1.75rem;
   margin: 0;
   padding-top: 20px;
-}
-.menu-header .hoverheart:hover .fas.fa-heart {
-  opacity: 1;
-  transition: 0.3s ease-in-out;
-}
-.menu-header .hoverheart:hover .far.fa-heart {
-  opacity: 0;
-  transition: 0.3s ease-in-out;
-}
-.menu-header .fas.fa-heart {
-  font-size: 1.5rem;
-  position: absolute;
-  right: 25px;
-  top: 30px;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  opacity: 0;
-}
-.menu-header .far.fa-heart {
-  font-size: 1.5rem;
-  position: absolute;
-  right: 25px;
-  top: 30px;
-  opacity: 1;
 }
 
 .menu-content {
@@ -218,6 +195,14 @@ img {
   width: 40px;
 }
 
+@keyframes itemAppear {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 .menu-item {
   margin: 10px 0;
   border-radius: 15px;
@@ -226,6 +211,35 @@ img {
   box-shadow: 3px 3px 10px rgba(100, 100, 100, 0.25);
   position: relative;
   overflow: hidden;
+  cursor: pointer;
+  animation: itemAppear 0.6s;
+}
+.menu-item.appear-0 {
+  animation-delay: 0s;
+}
+.menu-item.appear-1 {
+  animation-delay: 0.1s;
+}
+.menu-item.appear-2 {
+  animation-delay: 0.2s;
+}
+.menu-item.appear-3 {
+  animation-delay: 0.3s;
+}
+.menu-item.appear-4 {
+  animation-delay: 0.4s;
+}
+.menu-item.appear-5 {
+  animation-delay: 0.5s;
+}
+.menu-item.appear-6 {
+  animation-delay: 0.6s;
+}
+.menu-item.appear-7 {
+  animation-delay: 0.7s;
+}
+.menu-item.appear-8 {
+  animation-delay: 0.8s;
 }
 .menu-item__title {
   margin: 0;
@@ -244,6 +258,81 @@ img {
   text-align: right;
   font-weight: 600;
 }
+.menu-item__check {
+  background: #99e2d0;
+  position: absolute;
+  height: 100%;
+  width: 20%;
+  right: -20%;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  font-size: 25px;
+  transition: right 0.4s linear;
+}
+.menu-item i {
+  transition: transform 0.4s linear;
+}
+.menu-item:hover {
+  width: 78%;
+}
+.menu-item:hover .menu-item__check {
+  right: 0;
+}
+.menu-item:hover .menu-item__check i {
+  transform: rotate(360deg);
+}
+
+.like {
+  font-size: 20px;
+  color: grey;
+}
+.like:hover .fas.fa-heart {
+  opacity: 1;
+  transition: 0.3s ease-in-out;
+}
+.like:hover .far.fa-heart {
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+
+.fas.fa-heart {
+  font-size: 1.5rem;
+  position: absolute;
+  background: linear-gradient(#ff79da, #9356dc);
+  right: 25px;
+  top: 30px;
+  opacity: 0;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.far.fa-heart {
+  font-size: 1.5rem;
+  position: absolute;
+  right: 25px;
+  top: 30px;
+  opacity: 1;
+}
+
+.btn {
+  border-radius: 30px;
+  color: white;
+  padding: 15px 20px;
+  text-decoration: none;
+  display: block;
+  width: fit-content;
+  margin: auto;
+  background: linear-gradient(to left, #9356dc, #ff79da);
+  box-shadow: 3px 3px 10px rgba(100, 100, 100, 0.25);
+  transition: all 400ms;
+}
+.btn:hover {
+  box-shadow: 3px 3px 10px rgba(100, 100, 100, 0.75);
+  filter: brightness(1.1);
+}
 
 header {
   padding: 0.6rem;
@@ -251,10 +340,10 @@ header {
   position: relative;
   z-index: 1000;
 }
-header.main-header {
+header .main-header {
   padding: 15px 0;
 }
-header.restaurant-header {
+header .restaurant-header {
   display: inline-flex;
   align-items: center;
   width: 100%;
@@ -267,11 +356,15 @@ header .title {
   font-weight: 300;
   margin: 0;
 }
+header span {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+}
 header i {
   color: #000;
-  left: 2em;
-  position: absolute;
-  top: 1.5em;
 }
 
 footer {
@@ -293,17 +386,6 @@ footer a {
 }
 footer .fas {
   margin-right: 10px;
-}
-
-.btn {
-  border-radius: 30px;
-  color: white;
-  padding: 15px 20px;
-  text-decoration: none;
-  display: block;
-  width: fit-content;
-  margin: auto;
-  background: linear-gradient(to left, #9356DC, #FF79DA);
 }
 
 /*# sourceMappingURL=style.css.map */

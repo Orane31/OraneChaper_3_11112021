@@ -1,4 +1,10 @@
 $color-fond: #ececec;
 
-$font-principal: 'Roboto, sans-serif';
-$font-secondaire: 'Shrikhand';
+$font-principal: "Roboto, sans-serif";
+$font-secondary: "Shrikhand";
+
+$first-color: #9356dc;
+$first-color-light: #e4d5f6;
+$second-color: #ff79da;
+$third-color: #99e2d0;
+$gradient: linear-gradient($second-color, $first-color);

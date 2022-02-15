@@ -1,0 +1,33 @@
+.like {
+    font-size: 20px;
+    color: grey;
+
+    &:hover {
+        .fas.fa-heart {
+            opacity: 1;
+            transition: 0.3s ease-in-out;
+        }
+        .far.fa-heart {
+            opacity: 0;
+            transition: 0.3s ease-in-out;
+        }
+    }
+}
+
+.fas.fa-heart {
+    font-size: 1.5rem;
+    position: absolute;
+    background: $gradient;
+    right: 25px;
+    top: 30px;
+    opacity: 0;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.far.fa-heart {
+    font-size: 1.5rem;
+    position: absolute;
+    right: 25px;
+    top: 30px;
+    opacity: 1;
+}
