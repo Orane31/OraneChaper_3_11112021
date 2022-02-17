@@ -1,67 +1,94 @@
-.menu-item {
-    margin: 10px 0;
-    border-radius: 15px;
-    background: #ffffff;
-    padding: 12px;
-    box-shadow: 3px 3px 10px rgb(100 100 100 / 25%);
-    position: relative;
-    overflow: hidden;
-    cursor: pointer;
-    animation: itemAppear 0.6s;
+.menu-items {
+    .menu-item {
+        margin: 10px 0;
+        border-radius: 15px;
+        background: #ffffff;
+        padding: 12px;
+        box-shadow: 3px 3px 10px rgb(100 100 100 / 25%);
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+        animation: itemAppear 0.6s;
+        transition: width 0.4s linear;
 
-    @for $i from 0 to 9 {
-        &.appear-#{$i} {
-            animation-delay: #{$i/10}s;
+        &__description {
+            width: 100%;
+            transition: width 0.4s linear;
         }
-    }
+        &__title {
+            margin: 0;
+            margin-top: 5px;
+            display: -webkit-box;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            font-weight: bold;
+        }
 
-    &__title {
-        margin: 0;
-        display: -webkit-box;
-        -webkit-line-clamp: 1;
-        -webkit-box-orient: vertical;
-        overflow: hidden;
-        font-weight: bold;
-    }
+        &__details {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
 
-    &__description {
-        display: flex;
-        justify-content: space-between;
-        overflow: hidden;
-    }
+        &__side {
+            display: -webkit-box;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
 
-    &__price {
-        text-align: right;
-        font-weight: 600;
-    }
+        &__price {
+            width: 75px;
+            text-align: right;
+            font-weight: 600;
+        }
 
-    &__check {
-        background: $third-color;
-        position: absolute;
-        height: 100%;
-        width: 20%;
-        right: -20%;
-        top: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: #ffffff;
-        font-size: 25px;
-        transition: right 0.4s linear;
-    }
+        &__check {
+            background: $third-color;
+            position: absolute;
+            height: 100%;
+            width: 20%;
+            right: -20%;
+            top: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #ffffff;
+            font-size: 25px;
+            transition: right 0.4s linear;
 
-    i {
-        transition: transform 0.4s linear;
-    }
-
-    &:hover {
-        width: 78%;
-
-        .menu-item__check {
-            right: 0;
             i {
-                transform: rotate(360deg);
+                transition: transform 0.4s linear;
             }
         }
+
+        &:hover {
+            .menu-item__description {
+                width: 78%;
+            }
+
+            .menu-item__check {
+                right: 0;
+                i {
+                    transform: rotate(360deg);
+                }
+            }
+        }
+
+        @for $i from 0 to 9 {
+            &.appear-#{$i} {
+                animation-delay: #{$i/10}s;
+            }
+        }
+    }
+}
+
+@keyframes itemAppear {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
     }
 }
