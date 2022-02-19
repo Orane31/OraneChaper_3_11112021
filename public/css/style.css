@@ -12,7 +12,7 @@ body a {
 }
 
 section.local {
-  background-color: #EAEAEA;
+  background-color: #eaeaea;
   padding: 15px;
   text-align: center;
 }
@@ -21,7 +21,7 @@ section.local i {
 }
 
 section.pres {
-  background-color: #F5F5F5;
+  background-color: #f5f5f5;
   padding: 30px 15px;
   text-align: center;
 }
@@ -39,7 +39,7 @@ section.how .how__steps {
   padding-left: 15px;
 }
 section.how .how__step {
-  background: #F5F5F5;
+  background: #f5f5f5;
   margin-bottom: 15px;
   padding: 25px 30px;
   border-radius: 20px;
@@ -102,6 +102,9 @@ section.restaurants .card .card__text div {
 }
 section.restaurants .card .card__footer i.far.fa-heart {
   font-size: 20px;
+  position: absolute;
+  right: 15px;
+  bottom: 30px;
 }
 section.restaurants .card .card__img {
   object-fit: cover;
@@ -113,6 +116,7 @@ section.restaurants .card .card__footer {
   align-items: center;
   justify-content: space-between;
   padding: 15px;
+  position: relative;
 }
 
 @media screen and (max-width: 890px) {
@@ -164,15 +168,16 @@ img {
 
 .menu-header {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 23px;
+  justify-content: space-around;
 }
 .menu-header__title {
   text-align: center;
   font-family: "Shrikhand";
-  font-weight: 500;
-  font-size: 1.75rem;
+  font-weight: 600;
   margin: 0;
-  padding-top: 20px;
 }
 
 .menu-content {
@@ -213,28 +218,30 @@ img {
 }
 .menu-items .menu-item__title {
   margin: 0;
-  margin-top: 5px;
   display: -webkit-box;
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
   overflow: hidden;
-  font-weight: bold;
 }
 .menu-items .menu-item__details {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-top: 5px;
+  margin-right: 5px;
 }
 .menu-items .menu-item__side {
   display: -webkit-box;
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
   overflow: hidden;
+  margin: 0;
 }
 .menu-items .menu-item__price {
   width: 75px;
   text-align: right;
   font-weight: 600;
+  margin: 0;
 }
 .menu-items .menu-item__check {
   background: #99e2d0;
@@ -345,6 +352,9 @@ img {
 .btn:hover {
   box-shadow: 3px 3px 10px rgba(100, 100, 100, 0.75);
   filter: brightness(1.1);
+}
+.btn.order-btn {
+  margin: 16px auto;
 }
 
 header {

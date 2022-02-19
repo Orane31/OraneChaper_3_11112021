@@ -15,14 +15,16 @@ img {
 
 .menu-header {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 23px;
+    justify-content: space-around;
     &__title {
         text-align: center;
         font-family: $font-secondary;
-        font-weight: 500;
-        font-size: 1.75rem;
+        font-weight: 600;
         margin: 0;
-        padding-top: 20px;
+        // padding-top: 20px;
     }
 }
 
